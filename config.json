@@ -1,0 +1,75 @@
+{
+  "paper": "Paper_2_Predictive_Maintenance",
+  "title": "AI Predictive Maintenance Dashboard",
+  "subtitle": "Machine Failure Risk Assessment",
+  "description": "Estimates machine failure risk using operational measurements and machine characteristics.",
+  "warning": "Research demonstration trained on synthetic maintenance data. Predictions should not replace industrial safety or maintenance procedures.",
+  "positive_class": "1",
+  "threshold": 0.25,
+  "feature_order": [
+    "Type",
+    "Air temperature",
+    "Process temperature",
+    "Rotational speed",
+    "Torque",
+    "Tool wear"
+  ],
+  "features": [
+    {
+      "name": "Type",
+      "data_type": "string",
+      "input_type": "select",
+      "default": "L",
+      "choices": [
+        "L",
+        "M",
+        "H"
+      ],
+      "section": "Machine Information"
+    },
+    {
+      "name": "Air temperature",
+      "data_type": "float",
+      "input_type": "number",
+      "default": 300.1,
+      "choices": [],
+      "section": "Machine Operating Measurements"
+    },
+    {
+      "name": "Process temperature",
+      "data_type": "float",
+      "input_type": "number",
+      "default": 310.1,
+      "choices": [],
+      "section": "Machine Operating Measurements"
+    },
+    {
+      "name": "Rotational speed",
+      "data_type": "integer",
+      "input_type": "number",
+      "default": 1503,
+      "choices": [],
+      "section": "Machine Operating Measurements"
+    },
+    {
+      "name": "Torque",
+      "data_type": "float",
+      "input_type": "number",
+      "default": 40.1,
+      "choices": [],
+      "section": "Machine Operating Measurements"
+    },
+    {
+      "name": "Tool wear",
+      "data_type": "integer",
+      "input_type": "number",
+      "default": 107,
+      "choices": [],
+      "section": "Machine Operating Measurements"
+    }
+  ],
+  "classes": [
+    "0",
+    "1"
+  ]
+}
